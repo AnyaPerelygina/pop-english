@@ -1,0 +1,51 @@
+.nav {
+  align-self: center;
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 36px;
+    margin-bottom: 44px;
+  }
+}
+
+.nav__item {
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+
+  @include vp-767 {
+    font-size: 32px;
+    background-color: $color-default-white;
+    width: fit-content;
+  }
+
+  @include vp-479 {
+    font-size: 26px;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+
+    .nav__link {
+      color: $color-brilliat-rose;
+    }
+  }
+}
+
+.nav__item--hidden {
+  @media (min-width: 768px) and (max-width: 1000px) {
+    display: none;
+    width: 0;
+  }
+}

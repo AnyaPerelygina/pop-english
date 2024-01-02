@@ -1,0 +1,48 @@
+.toggle {
+  display: none;
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+
+  @include vp-479 {
+    justify-content: end;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.toggle__opened,
+.toggle__closed {
+  @include vp-479 {
+    width: 90%;
+  }
+}
+
+.toggle__opened {
+    margin-right: -10px;
+}
+
+.toggle .toggle__closed {
+  display: none;
+  opacity: 0;
+}
+
+.toggle.is-opened .toggle__opened {
+  display: none;
+}
+
+.toggle.is-opened .toggle__closed {
+  display: inline;
+  opacity: 1;
+  margin-right: -5px;
+}

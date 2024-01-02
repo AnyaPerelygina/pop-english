@@ -6,17 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Сайт школы английского языка Pop english">
     <title>Pop english</title>
+    <link rel="icon" href="favicon/favicon.ico">
+    <link rel="icon" href="favicon/favicon.png" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-      </header>
-      <main>
-      </main>
-      <footer>
-      </footer>
-    </div>
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="header__logo">
+          <picture>
+            <source media="(max-width: 1440px)" srcset="img/logotype-header.webp">
+            <img src="img/logotype-header.png" width="136" height="136" alt="Логотип школы английского языка Pop english">
+          </picture>
+        </a>
+        <button class="header__toggle toggle" type="button" aria-label="Открыть меню.">
+          <svg class="toggle__opened" width="88" height="52" aria-hidden="true" focusable="false">
+            <use href="img/sprite.svg#toggle-open"></use>
+          </svg>
+          <svg class="toggle__closed" width="66" height="66" aria-hidden="true" focusable="false">
+            <use href="img/sprite.svg#toggle-close"></use>
+          </svg>
+        </button>
+        <div class="header__subwrapper">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link">О нас</a>
+              </li>
+              <li class="nav__item nav__item--hidden">
+                <a class="nav__link">Преподаватели</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link">Цены</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link">Отзывы</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__button">Записаться</button>
+          <ul class="header__social social">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Телеграм.">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/telegram.webp">
+                  <img src="img/telegram.png" width="106" height="77" alt=Телеграм.">
+                </picture>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ютуб.">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/youtube.webp">
+                  <img src="img/youtube.png" width="106" height="77" alt="Ютуб.">
+                </picture>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Вконтакте.">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/vk.webp">
+                  <img src="img/vk.png" width="106" height="77" alt="Вконтакте.">
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+    </main>
+    <footer>
+    </footer>
 
     <!-- Модалки -->
     <!-- <div class="modal modal--preload" data-modal="feedback">

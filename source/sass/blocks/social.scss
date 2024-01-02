@@ -1,0 +1,25 @@
+.social {
+  display: none;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.social__link img {
+  @include vp-479 {
+    width: 90%;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+}
