@@ -11,103 +11,161 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <header class="header">
-      <div class="header__wrapper">
-        <a class="header__logo">
-          <picture>
-            <source media="(max-width: 1440px)" srcset="img/logotype-header.webp">
-            <img src="img/logotype-header.png" width="136" height="136" alt="Логотип школы английского языка Pop english">
-          </picture>
-        </a>
-        <button class="header__toggle toggle" type="button" aria-label="Открыть меню.">
-          <svg class="toggle__opened" width="88" height="52" aria-hidden="true" focusable="false">
-            <use href="img/sprite.svg#toggle-open"></use>
-          </svg>
-          <svg class="toggle__closed" width="66" height="66" aria-hidden="true" focusable="false">
-            <use href="img/sprite.svg#toggle-close"></use>
-          </svg>
-        </button>
-        <div class="header__subwrapper">
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link">О нас</a>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__wrapper">
+          <a class="header__logo">
+            <picture>
+              <source media="(max-width: 1440px)" srcset="img/logotype-header.webp">
+              <img src="img/logotype-header.png" width="136" height="136" alt="Логотип школы английского языка Pop english">
+            </picture>
+          </a>
+          <button class="header__toggle toggle" type="button" aria-label="Открыть меню.">
+            <svg class="toggle__opened" width="88" height="52" aria-hidden="true" focusable="false">
+              <use href="img/sprite.svg#toggle-open"></use>
+            </svg>
+            <svg class="toggle__closed" width="66" height="66" aria-hidden="true" focusable="false">
+              <use href="img/sprite.svg#toggle-close"></use>
+            </svg>
+          </button>
+          <div class="header__subwrapper">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">О нас</a>
+                </li>
+                <li class="nav__item nav__item--hidden">
+                  <a class="nav__link" href="#">Преподаватели</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Цены</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="header__button">Записаться</button>
+            <ul class="header__social social">
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Телеграм.">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="img/telegram.webp">
+                    <img src="img/telegram.png" width="106" height="77" alt=Телеграм.">
+                  </picture>
+                </a>
               </li>
-              <li class="nav__item nav__item--hidden">
-                <a class="nav__link">Преподаватели</a>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Ютуб.">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="img/youtube.webp">
+                    <img src="img/youtube.png" width="106" height="77" alt="Ютуб.">
+                  </picture>
+                </a>
               </li>
-              <li class="nav__item">
-                <a class="nav__link">Цены</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link">Отзывы</a>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Вконтакте.">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="img/vk.webp">
+                    <img src="img/vk.png" width="106" height="77" alt="Вконтакте.">
+                  </picture>
+                </a>
               </li>
             </ul>
-          </nav>
-          <button class="header__button">Записаться</button>
-          <ul class="header__social social">
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="Телеграм.">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="img/telegram.webp">
-                  <img src="img/telegram.png" width="106" height="77" alt=Телеграм.">
-                </picture>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="Ютуб.">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="img/youtube.webp">
-                  <img src="img/youtube.png" width="106" height="77" alt="Ютуб.">
-                </picture>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" aria-label="Вконтакте.">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="img/vk.webp">
-                  <img src="img/vk.png" width="106" height="77" alt="Вконтакте.">
-                </picture>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
-      </div>
-    </header>
-    <main>
-    </main>
-    <footer>
-    </footer>
-
-    <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+      </header>
+      <main>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__infoCompany">
+            <div class="footer__company">
+              <span>© 2023 Pop English</span>
+              <p>ИП Черепанова Алена Андреевна
+                ОГРНИП 323665800122310
+                ИНН 662349745518
+                622051, обл. Свердловская, г. Нижний Тагил,
+                ул. Коминтерна, д. 53, кв. 2
+              </p>
+            </div>
+            <div class="footer__link">
+              <a href="#">Пользовательское соглашение</a>
+              <a href="#">Политика конфиденциальности</a>
+              <a href="#">Соглашение на обработку персональных данных</a>
+              <a href="#">Договор-оферта</a>
+            </div>
+            <div class="footer__contacts">
+              <a href="mailto:pop.english.foreveryone@gmail.com">pop.english.foreveryone@gmail.com</a>
+              <a href="tel:89961779028">89961779028</a>
+            </div>
+          </div>
+          <div class="footer__nav footerNav">
+            <ul class="footerNav__list">
+              <li class="footerNav__item">
+                <a class="footerNav__link" href="#">О нас</a>
+              </li>
+              <li class="footerNav__item">
+                <a class="footerNav__link" href="#">Преподаватели</a>
+              </li>
+              <li class="footerNav__item">
+                <a class="footerNav__link" href="#">Цены</a>
+              </li>
+              <li class="footerNav__item">
+                <a class="footerNav__link" href="#">Отзывы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__subscription subscription">
+            <p>Подпишись на рассылку - получишь скидку!</p>
+            <div class="subscription__form" >
+              <form action="#" method="post" autocomplete="off">
+                <div class="subscription__email" data-validate-type="email" data-required data-email-length="18">
+                  <label class="visually-hidden">Email</label>
+                  <input placeholder="Введите е-mail" type="email" name="email" aria-invalid="true" required>
+                </div>
+                <button class="subscription__button" type="submit">Подписаться</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer__social">
+            <span>Давай дружить:</span>
+            <ul>
+              <li>
+                <a class="footer__social-link" href="#" aria-label="Телеграм.">
+                  <picture>
+                    <source media="(max-width: 1440px)" srcset="img/telegram.webp">
+                    <img src="img/telegram.png" width="48" height="48" alt=Телеграм.">
+                  </picture>
+                </a>
+              </li>
+              <li>
+                <a class="footer__social-link" href="#" aria-label="Ютуб.">
+                  <picture>
+                    <source media="(max-width: 1440px)" srcset="img/youtube.webp">
+                    <img src="img/youtube.png" width="68" height="56" alt="Ютуб.">
+                  </picture>
+                </a>
+              </li>
+              <li>
+                <a class="footer__social-link" href="#" aria-label="Вконтакте.">
+                  <picture>
+                    <source media="(max-width: 1440px)" srcset="img/vk.webp">
+                    <img src="img/vk.png" width="48" height=48" alt="Вконтакте.">
+                  </picture>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="footer__logo">
+            <picture>
+              <source media="(max-width: 1440px)" srcset="img/logotype-footer.webp">
+              <img src="img/logotype-footer.png" width="220" height="132" alt="Логотип школы английского языка Pop english">
+            </picture>
+          </a>
         </div>
-      </div>
+      </footer>
     </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

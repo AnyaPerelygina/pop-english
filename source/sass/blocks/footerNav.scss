@@ -1,0 +1,50 @@
+.footerNav {
+  @include vp-1439 {
+    padding: 4px 0 0;
+  }
+
+  @include vp-767 {
+    padding: 0 0 0 12px;
+  }
+
+  @include vp-479 {
+    padding: 8px 0 0 12px;
+  }
+}
+
+.footerNav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @include vp-1439 {
+    gap: 8px;
+    margin: 0 0 -8px;
+  }
+
+  @include vp-999 {
+    margin: 7px 0 -8px 3px;
+  }
+
+  @include vp-767 {
+    gap: 12px;
+    margin: 0 0 44px;
+  }
+}
+
+.footerNav__item {
+  margin: 0 0 8px;
+
+  &:hover,
+  &:focus {
+    a {
+      color: $color-brilliat-rose;
+    }
+  }
+
+  @include vp-1439 {
+    margin: 0;
+  }
+}

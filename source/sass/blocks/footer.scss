@@ -1,0 +1,308 @@
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.footer__wrapper {
+  padding: 40px 100px 44px 87px;
+  display: grid;
+  grid-template-areas:
+    "C N F S"
+    "C N F L";
+  grid-template-columns: 293px 214px 500px auto;
+  justify-content: center;
+
+  @include vp-1439 {
+    padding: 34px 10px 32px 37px;
+    grid-template-areas:
+      "C N S"
+      "C F L";
+    grid-template-columns: 306px 470px auto;
+  }
+
+  @include vp-999 {
+    padding: 25px 10px 7px 7px;
+    grid-template-areas:
+      "C N S"
+      "C N L"
+      "F F L";
+    grid-template-columns: 290px 266px auto;
+  }
+
+  @include vp-767 {
+    padding: 10px 8px 5px 13px;
+    grid-template-areas:
+      "L N "
+      "L S"
+      "F F"
+      "C C";
+      grid-template-columns: 1fr 1fr;
+  }
+
+  @include vp-479 {
+    grid-template-areas:
+      "L N"
+      "S S"
+      "C C";
+  }
+}
+
+.footer__infoCompany {
+  grid-area: C;
+  display: flex;
+  flex-direction: column;
+
+  @include vp-1439 {
+    margin: 0 0 0 12px;
+  }
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: 57% 43%;
+    column-count: 2;
+    margin: 0 auto;
+  }
+
+  @include vp-479 {
+    column-count: 1;
+    grid-template-columns: 1fr;
+    margin: unset;
+  }
+}
+
+.footer__company {
+  margin: 0 0 20px;
+
+  span {
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+  }
+
+  p {
+    white-space: pre-line;
+    margin: 0;
+    padding: 0;
+
+    font-size: 10px;
+    line-height: 17px;
+  }
+
+  @include vp-1439 {
+    padding: 6px 0 0;
+  }
+
+  @include vp-999 {
+    margin: 0 0 2px;
+  }
+
+  @include vp-767 {
+    padding: 27px 0 0;
+    margin: 0;
+  }
+
+  @include vp-479 {
+    margin: 0 0 20px;
+  }
+}
+
+.footer__link {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 6px;
+  padding: 0;
+
+  font-size: 10px;
+  line-height: normal;
+
+  a {
+    margin: 0 0 3px;
+    user-select: none;
+
+    &:hover,
+    &:focus {
+      color: $color-brilliat-rose;
+    }
+  }
+
+  @include vp-1439 {
+    padding: 3px 0 0;
+    max-width: 230px;
+  }
+
+  @include vp-999 {
+    padding: 3px 0 0;
+    max-width: 235px;
+  }
+
+  @include vp-767 {
+    justify-content: flex-end;
+    margin: 0;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 10px;
+  line-height: normal;
+
+  a {
+    &:hover,
+    &:focus {
+      color: $color-brilliat-rose;
+    }
+  }
+
+  @include vp-999 {
+    gap: 0;
+  }
+
+  @include vp-767 {
+    margin: 13px 0 0;
+  }
+}
+
+.footer__nav {
+  grid-area: N;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 20px;
+  line-height: normal;
+
+  @include vp-479 {
+    font-size: 16px;
+  }
+}
+
+.footer__subscription {
+  grid-area: F;
+  align-self: end;
+  padding: 0 0 33px;
+
+  @include vp-1439 {
+    align-self: start;
+    padding: 10px 0 0;
+    margin: 0;
+  }
+
+  @include vp-999 {
+    align-self: center;
+  }
+}
+
+.footer__social {
+  grid-area: S;
+
+  display: flex;
+  flex-direction: column;
+  max-width: 225px;
+  padding: 0 0 0 43px;
+
+  span {
+    font-size: 20px;
+    line-height: normal;
+    margin: -2px 0 20px 6px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+  }
+
+  @include vp-1439 {
+    padding: 0;
+    margin: -16px 0 0;
+    max-width: 182px;
+  }
+
+  @include vp-999 {
+    margin: 0;
+
+    span {
+      margin: 7px 0 14px 6px;
+    }
+
+    ul {
+      max-width: 128px;
+      margin: 0 auto;
+    }
+  }
+
+  @include vp-767 {
+    margin: 0 0 24px;
+    max-width: 100%;
+
+    span {
+      margin: -2px 0 19px 7px;
+    }
+
+    ul {
+      max-width: 161px;
+      margin: 0 0 0 10px;
+    }
+  }
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__social-link {
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+}
+
+.footer__logo {
+  grid-area: L;
+
+  width: 244px;
+  height: 132px;
+  padding: 20px 0 0 24px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  @include vp-1439 {
+    padding: 0;
+    margin: -50px 0 0 -13px;
+    width: 217px;
+  }
+
+  @include vp-999 {
+    margin: 16px 0 0 -15px;
+    width: 222px;
+  }
+
+  @include vp-767 {
+    margin: 33px 0 0 6px;
+    margin: 34px 5px 0 0;
+    justify-self: end;
+    width: 217px;
+  }
+
+  @include vp-479 {
+    margin: 0;
+    width: 100%;
+  }
+}
