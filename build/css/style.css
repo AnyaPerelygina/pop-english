@@ -591,6 +591,10 @@ button,
   .header__wrapper {
     padding: 0 20px;
     min-height: 98px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    z-index: 1;
   }
 }
 
@@ -721,6 +725,7 @@ button,
   content: "";
   top: 100px;
   right: 0;
+  z-index: 1;
   background-image: url("../img/background-dot-black.webp");
   background-size: cover;
   background-position: top;
@@ -735,7 +740,7 @@ button,
 .header.is-opened::before {
   content: "";
   position: fixed;
-  z-index: 0;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   inset: 0;
@@ -1593,7 +1598,7 @@ button,
 }
 @media (max-width: 767px) {
   .hero {
-    z-index: -1;
+    z-index: 0;
   }
   .hero img {
     padding: 0;

@@ -33,6 +33,8 @@
   @include vp-767 {
     padding: 0 20px;
     min-height: 98px;
+    justify-content: space-between;
+    z-index: 1;
   }
 }
 
@@ -146,6 +148,7 @@
   content: "";
   top: 100px;
   right: 0;
+  z-index: 1;
   background-image: url("../img/background-dot-black.webp");
   background-size: cover;
   background-position: top;
@@ -163,7 +166,7 @@
   &::before {
     content: "";
     position: fixed;
-    z-index: 0;
+    z-index: 1;
     background-color: $overlay-dark;
     opacity: 1;
     inset: 0;
