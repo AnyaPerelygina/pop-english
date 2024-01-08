@@ -18,7 +18,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
-  background-color: white;
+  background-color: $color-default-white;
 
   position: relative;
 
@@ -35,6 +35,8 @@
     min-height: 98px;
     justify-content: space-between;
     z-index: 1;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 

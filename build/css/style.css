@@ -574,7 +574,7 @@ button,
       -ms-flex-align: center;
           align-items: center;
   padding: 0 40px;
-  background-color: white;
+  background-color: #ffffff;
   position: relative;
 }
 @media (max-width: 1439px) {
@@ -595,6 +595,8 @@ button,
         -ms-flex-pack: justify;
             justify-content: space-between;
     z-index: 1;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
