@@ -77,6 +77,7 @@
       </header>
       <main>
         <section class="hero">
+          <h1 class="visually-hidden">Школа английского языка</h1>
           <picture>
             <source type="image/webp" media="(max-width: 767px)" srcset="./img/hero/hero-mobile.webp, ./img/hero/hero-mobile@2x.webp 2x">
             <source type="image/webp" media="(max-width: 999px)" srcset="./img/hero/hero-tablet.webp, ./img/hero/hero-tablet@2x.webp 2x">
@@ -88,16 +89,63 @@
             <img src="./img/hero/hero-desktop.png" srcset="./img/hero/hero-desktop@2x.png 2x" width="1439" height="813" alt="Фоновая картинка.">
           </picture>
           <div class="hero__text">
-            <h1>Английский,
+            <h2>Английский,
               <span>Доступный</span>
               <span>Каждому</span>
-            </h1>
+            </h2>
             <p>Преодолей языковой барьер,
               эффективно учи слова, пойми
-              грамматику, увидь прогресс и
-              начни говорить!</p>
+              грамматику, увидь прогресс
+              и начни говорить!</p>
           </div>
           <button class="hero__button" type="button">Записаться</button>
+        </section>
+        <section class="about">
+          <div class="about__wrapper">
+            <h2 class="about__title">О нас</h2>
+            <ul class="about__list">
+              <li class="about__item about__item--1">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px)" srcset="./img/about/about-us-photo-1.webp">
+                  <img src="./img/about/about-us-photo-1.jpg" width="480" height="280" alt="Фоновая картинка.">
+                </picture>
+                <h3 class="about__subtitle">Методика</h3>
+                <p>Используя коммуникативный и&nbsp;лексический подходы, мы позволяем погрузиться в&nbsp;языковую среду, быстро заговорить и&nbsp;использовать изученную грамматику и&nbsp;лексику в&nbsp;речи</p>
+              </li>
+              <li class="about__item about__item--2">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px)" srcset="./img/about/about-us-photo-2.webp">
+                  <img src="./img/about/about-us-photo-2.jpg" width="480" height="288" alt="Фоновая картинка.">
+                </picture>
+                <h3 class="about__subtitle">Quizlet</h3>
+                <p>Индивидуальный сет карточек со&nbsp;словами к&nbsp;каждому уроку для&nbsp;удобного и&nbsp;быстрого запоминания новой лексики</p>
+              </li>
+              <li class="about__item about__item--3">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px)" srcset="./img/about/about-us-photo-3.webp">
+                  <img src="./img/about/about-us-photo-3.jpg" width="480" height="288" alt="Фоновая картинка.">
+                </picture>
+                <h3 class="about__subtitle">Платформа</h3>
+                <p>Индивидуальная интерактивная доска Miro с&nbsp;вашими уроками и&nbsp;материалами с&nbsp;пожизненным доступом</p>
+              </li>
+              <li class="about__item about__item--4">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px)" srcset="./img/about/about-us-photo-4.webp">
+                  <img src="./img/about/about-us-photo-4.jpg" width="480" height="280" alt="Фоновая картинка.">
+                </picture>
+                <h3 class="about__subtitle">Прогресс</h3>
+                <p>Ежемесячные тесты для&nbsp;отслеживания прогресса и&nbsp;выявления «западающих» тем</p>
+              </li>
+              <li class="about__item about__item about__item--5">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px)" srcset="./img/about/about-us-photo-5.webp">
+                  <img src="./img/about/about-us-photo-5.jpg" width="480" height="280" alt="Фоновая картинка.">
+                </picture>
+                <h3 class="about__subtitle">Разговорные клубы</h3>
+                <p>Бесплатное участие в&nbsp;разговорных клубах раз в&nbsp;неделю. Возможность дополнительно попрактиковаться в&nbsp;говорении, изучить новую лексику, встретить единомышленников</p>
+              </li>
+            </ul>
+          </div>
         </section>
       </main>
       <footer class="footer">
@@ -140,7 +188,7 @@
             </ul>
           </div>
           <div class="footer__subscription subscription">
-            <p>Подпишись на рассылку - получишь скидку!</p>
+            <p>Подпишись на&nbsp;рассылку&nbsp;-&nbsp;получишь скидку!</p>
             <div class="subscription__form" >
               <form action="#" method="post" autocomplete="off">
                 <div class="subscription__email" data-validate-type="email" data-required data-email-length="18">
