@@ -1,0 +1,110 @@
+.teachers {
+  background-color: $color-paris-daisy;
+  position: relative;
+
+  margin-bottom: 100px; //временное свойство
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -50px;
+    right: 0;
+    z-index: 1;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    background-color: $color-paris-daisy;
+    background-image: url("./../../img/dots/background-dot-black.png");
+    background-size: 100%;
+    border-top: 4px solid $color-default-black;
+
+    transform: skew(0, -2deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -55px;
+    right: 0;
+    z-index: 1;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    background-color: $color-paris-daisy;
+    background-image: url("./../../img/dots/background-dot-black.png");
+    background-size: 100%;
+    border-bottom: 4px solid $color-default-black;
+
+    transform: skew(0, 2deg);
+  }
+
+  @include vp-1439 {
+    &::before {
+      content: none;
+    }
+  }
+
+  @include vp-999 {
+    &::before {
+      content: "";
+      transform: skew(0, -5deg);
+    }
+
+    &::after {
+      transform: skew(0, 5deg);
+    }
+  }
+}
+
+.teachers__wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 65px 0 100px;
+
+  @include vp-999 {
+    padding: 80px 0 100px;
+  }
+}
+
+.teachers__title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 375px 200px;
+
+  @include vp-1439 {
+    margin: 0 0 0 150px;
+  }
+
+  @include vp-999 {
+    font-size: 32px;
+    margin: 0 0 120px 20px;
+  }
+}
+
+.teachers__list {
+  margin: 0;
+  padding: 0 40px;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  column-gap: 21px;
+
+  @include vp-1439 {
+    padding: 200px 40px 0;
+  }
+
+  @include vp-999 {
+    flex-direction: column;
+    row-gap: 272px;
+    padding: 200px 20px 0;
+  }
+
+  @include vp-767 {
+    row-gap: 300px;
+  }
+}

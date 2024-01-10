@@ -1,5 +1,5 @@
 .about {
-  padding: 14px 0 92px 22px;
+  padding: 14px 0 140px 22px;
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
@@ -9,11 +9,11 @@
   }
 
   @include vp-999 {
-    padding: 20px 50px 50px;
+    padding: 20px 50px 140px;
   }
 
   @include vp-767 {
-    padding: 20px 20px 30px;
+    padding: 20px 20px 90px;
   }
 }
 
