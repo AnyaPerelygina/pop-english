@@ -1,0 +1,277 @@
+.price {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.price__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px 50px;
+
+  @include vp-999 {
+    padding: 0 20px 50px;
+  }
+}
+
+.price__title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 102px 160px;
+  padding: 0;
+
+  @include vp-999 {
+    margin: 0 0 66px 0;
+  }
+}
+
+.price__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: flex-start;
+  column-gap: 19px;
+
+  @include vp-1439 {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 44px;
+    row-gap: 38px;
+    margin: 0 auto;
+  }
+
+  @include vp-999 {
+    column-gap: 18px;
+    row-gap: 19px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    padding: 0 40px;
+    row-gap: 55px;
+  }
+
+  @include vp-479 {
+    padding: 0;
+  }
+}
+
+.price__item {
+  width: 100%;
+  max-width: 440px;
+  height: fit-content;
+  padding: 50px 10px 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  row-gap: 35px;
+
+  position: relative;
+
+  @include vp-1439 {
+    padding: 50px 30px 20px;
+  }
+
+  @include vp-767 {
+    max-width: unset;
+  }
+
+  @include vp-479 {
+    padding: 50px 20px 20px;
+    row-gap: 20px;
+  }
+
+  &--1 {
+    background-color: $color-light-sky-blue;
+    border: 2px solid $color-default-black;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    &::after {
+      position: absolute;
+      content: url("./../img/ok.png");
+      top: -86px;
+      right: 0;
+      left: 0;
+      margin-right: auto;
+      margin-left: auto;
+      width: 210px;
+      height: 140px;
+      z-index: 1;
+    }
+
+    @include vp-1439 {
+      grid-column: span 2;
+      justify-self: center;
+      order: 3;
+    }
+
+    @include vp-999 {
+      grid-column: span 1;
+      justify-self: flex-start;
+    }
+
+    @include vp-767 {
+      order: 2;
+    }
+  }
+
+  &--2 {
+    background-color: $color-paris-daisy;
+    border: 2px solid $color-default-black;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    &::after {
+      position: absolute;
+      content: url("./../img/wow.png");
+      top: -86px;
+      right: 0;
+      left: 0;
+      margin-right: auto;
+      margin-left: auto;
+      width: 210px;
+      height: 140px;
+      z-index: 1;
+    }
+
+    .price__cost {
+      margin-top: -37px;
+    }
+
+    @include vp-1439 {
+      order: 1;
+    }
+
+    @include vp-999 {
+      margin-bottom: 36px;
+    }
+
+    @include vp-767 {
+      margin-bottom: unset;
+    }
+  }
+
+  &--3 {
+    background-color: $color-brilliat-rose;
+    border: 2px solid $color-default-black;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    &::after {
+      position: absolute;
+      content: url("./../img/yeah.png");
+      top: -86px;
+      right: 0;
+      left: 0;
+      margin-right: auto;
+      margin-left: auto;
+      width: 210px;
+      height: 140px;
+      z-index: 1;
+    }
+
+    .price__cost {
+      margin-top: -37px;
+    }
+
+    @include vp-1439 {
+      order: 2;
+    }
+
+    @include vp-999 {
+      grid-row: span 2;
+      align-self: center;
+    }
+
+    @include vp-767 {
+      order: 3;
+    }
+  }
+}
+
+.price__subtitle {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  white-space: pre-line;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  @include vp-1439 {
+    font-size: 24px;
+  }
+
+  @include vp-479 {
+    font-size: 22px;
+  }
+}
+
+.price__special {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 auto;
+
+  @include vp-479 {
+    font-size: 15px;
+  }
+}
+
+.price__conditions {
+  margin: 0;
+  padding: 0 0 0 30px;
+  list-style: disc;
+
+  li {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+
+    @include vp-999 {
+      font-size: 15px;
+    }
+
+
+    @include vp-479 {
+      font-size: 12px;
+    }
+  }
+
+  @include vp-1439 {
+    padding: 0 0 0 20px;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+  }
+}
+
+.price__cost {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: center;
+  white-space: pre-line;
+  margin: 0;
+  padding: 0;
+
+  @include vp-999 {
+    font-size: 14px;
+  }
+
+  @include vp-479 {
+    font-size: 13px;
+  }
+}
