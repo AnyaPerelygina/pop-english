@@ -1572,7 +1572,7 @@ button,
 .hero {
   position: relative;
   margin: 0 auto;
-  background-image: url("./../../img/dots/background-dot-black.webp");
+  background-image: url("./../img/dots/background-dot-black.webp");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -2082,7 +2082,7 @@ button,
   width: 100%;
   overflow: hidden;
   background-color: #ffe249;
-  background-image: url("./../../img/dots/background-dot-black.png");
+  background-image: url("./../img/dots/background-dot-black.png");
   background-size: 100%;
   border-top: 4px solid #000000;
   -webkit-transform: skew(0, -2deg);
@@ -2099,7 +2099,7 @@ button,
   width: 100%;
   overflow: hidden;
   background-color: #ffe249;
-  background-image: url("./../../img/dots/background-dot-black.png");
+  background-image: url("./../img/dots/background-dot-black.png");
   background-size: 100%;
   border-bottom: 4px solid #000000;
   -webkit-transform: skew(0, 2deg);
@@ -2215,7 +2215,6 @@ button,
   left: 0;
   right: 0;
   border: 2px solid #000000;
-  border-radius: 20px;
   background-color: #ee75ab;
 }
 @media (max-width: 1439px) {
