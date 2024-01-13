@@ -41,7 +41,7 @@
                   <a class="nav__link" href="#price">Цены</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#">Отзывы</a>
+                  <a class="nav__link" href="#feedback">Отзывы</a>
                 </li>
               </ul>
             </nav>
@@ -254,6 +254,43 @@
             </ul>
           </div>
         </section>
+        <section class="feedback" id="feedback">
+          <div class="feedback__wrapper">
+            <h2 class="feedback__title">Отзывы</h2>
+            <div class="feedback__swiper swiper">
+              <button class="feedback__button feedback__swiper-prev">
+                <svg width="27" height="71" viewBox="0 0 27 71">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <div class="feedback__list swiper-wrapper">
+                <div class="feedback__item swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 320px)" srcset="./img/feedback.webp">
+                    <img src="./img/feedback.png" width="400" height="700" alt="Фотография отзыва.">
+                  </picture>
+                </div>
+                <div class="feedback__item swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 320px)" srcset="./img/feedback.webp">
+                    <img src="./img/feedback.png" width="400" height="700" alt="Фотография отзыва.">
+                  </picture>
+                </div>
+                <div class="feedback__item swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 320px)" srcset="./img/feedback.webp">
+                    <img src="./img/feedback.png" width="400" height="700" alt="Фотография отзыва.">
+                  </picture>
+                </div>
+              </div>
+              <button class="feedback__button feedback__swiper-next">
+                <svg width="27" height="71" viewBox="0 0 27 71">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__wrapper">
@@ -290,7 +327,7 @@
                 <a class="footerNav__link" href="#price">Цены</a>
               </li>
               <li class="footerNav__item">
-                <a class="footerNav__link" href="#">Отзывы</a>
+                <a class="footerNav__link" href="#feedback">Отзывы</a>
               </li>
             </ul>
           </div>
