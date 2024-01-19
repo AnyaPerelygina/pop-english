@@ -546,10 +546,8 @@ button,
 }
 
 .header {
-  margin: 0 auto;
   width: 100%;
-  min-width: 320px;
-  max-width: 1440px;
+  background-color: #ffffff;
   position: sticky;
   top: 0;
   -webkit-transition: 1s;
@@ -564,6 +562,8 @@ button,
 
 .header__wrapper {
   min-height: 104px;
+  min-width: 320px;
+  max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -578,7 +578,7 @@ button,
       -ms-flex-align: center;
           align-items: center;
   padding: 0 40px;
-  background-color: #ffffff;
+  margin: 0 auto;
   position: relative;
 }
 @media (max-width: 1439px) {
