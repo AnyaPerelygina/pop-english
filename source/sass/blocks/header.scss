@@ -111,7 +111,6 @@
   color: $color-default-black;
 
   cursor: pointer;
-  user-select: none;
 
   @include vp-767 {
     max-width: 239px;

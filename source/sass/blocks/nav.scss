@@ -21,7 +21,6 @@
 .nav__item {
   font-size: 20px;
   cursor: pointer;
-  user-select: none;
 
   @include vp-767 {
     font-size: 32px;
