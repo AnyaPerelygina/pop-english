@@ -7,7 +7,6 @@ const createFeedbackSlider = () => {
     slidesPerView: 1,
     loop: true,
     spaceBetween: 10,
-    speed: 1200,
     allowTouchMove: isMobile(),
     navigation: {
       nextEl: '.feedback__swiper-next',
