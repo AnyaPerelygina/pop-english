@@ -1,0 +1,82 @@
+.first-lesson {
+  background-color: $color-tickle-me-pink;
+}
+
+.first-lesson__wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  justify-content: center;
+  align-items: start;
+  padding: 0 40px 40px;
+
+  @include vp-999 {
+    padding: 20px;
+  }
+
+  @include vp-999 {
+    grid-template-columns: 100%;
+  }
+}
+
+.first-lesson__text {
+  background-color: $color-default-white;
+  max-width: 534px;
+  padding: 40px;
+  margin: 229px 0 0 -78px;
+  border: 2px solid $color-default-black;
+  box-shadow: 4px 4px 0px 0px $color-default-black;
+  align-self: flex-end;
+
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 0;
+    padding: 0 0 15px;
+
+    @include vp-999 {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  @include vp-999 {
+    margin: 0;
+    width: 100%;
+    max-width: unset;
+    align-self: start;
+  }
+}
+
+.first-lesson__title {
+  margin: 0;
+  padding: 0 0 30px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50px;
+
+  @include vp-999 {
+    font-size: 24px;
+    line-height: 33px;
+    padding: 0 0 20px;
+  }
+}
+
+.first-lesson__list {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+.first-lesson__item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+
+  @include vp-999 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
