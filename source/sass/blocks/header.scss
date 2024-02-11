@@ -105,6 +105,7 @@
   min-height: 57px;
   height: fit-content;
   border: 2px solid $color-default-black;
+  box-shadow: 4px 4px 0px 0px $color-default-black;
   background-color: $color-paris-daisy;
   padding: 16px 32px;
 
@@ -121,10 +122,6 @@
 
     padding: 14px 42px;
     margin-bottom: 35px;
-    border-top: 2px solid $color-default-black;
-    border-right: 6px solid $color-default-black;
-    border-bottom: 6px solid $color-default-black;
-    border-left: 2px solid $color-default-black;
   }
 
   @include vp-479 {
@@ -136,7 +133,8 @@
   &:hover,
   &:focus {
     transform: scale(1.05);
-    border-color: $color-brilliat-rose;
+    border: 2px solid $color-brilliat-rose;
+    box-shadow: 4px 4px 0px 0px $color-brilliat-rose;
     color: $color-brilliat-rose;
   }
 }

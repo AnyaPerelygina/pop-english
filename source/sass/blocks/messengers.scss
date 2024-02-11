@@ -1,0 +1,43 @@
+.messengers {
+  max-width: 569px;
+  border: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: 8px;
+  padding: 16px 10px;
+
+  @include vp-767 {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 0;
+
+    @include vp-767 {
+      font-size: 17px;
+      line-height: 27px;
+      text-align: center;
+    }
+  }
+}
+
+.messengers__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 12px;
+}

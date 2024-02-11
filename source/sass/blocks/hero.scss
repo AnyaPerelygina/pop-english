@@ -169,10 +169,8 @@
   color: $color-default-black;
 
   background-color: $color-paris-daisy;
-  border-top: 2px solid $color-default-black;
-  border-right: 6px solid $color-default-black;
-  border-bottom: 6px solid $color-default-black;
-  border-left: 2px solid $color-default-black;
+  border: 2px solid $color-default-black;
+  box-shadow: 4px 4px 0px 0px $color-default-black;
   transform: rotate(-1.977deg);
   padding: 14px 42px;
   justify-content: center;
@@ -182,7 +180,8 @@
 
   &:hover,
   &:focus {
-    border-color: $color-brilliat-rose;
+    border: 2px solid $color-brilliat-rose;
+    box-shadow: 4px 4px 0px 0px $color-brilliat-rose;
     color: $color-brilliat-rose;
   }
 

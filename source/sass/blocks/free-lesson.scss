@@ -1,0 +1,121 @@
+.free-lesson {
+  border-top: 5px solid $color-default-black;
+  border-bottom: 5px solid $color-default-black;
+
+  @include vp-1439 {
+    min-height: 600px;
+  }
+
+  @include vp-767 {
+    min-height: 556px;
+    border-top: 2px solid $color-default-black;
+    border-bottom: none;
+  }
+}
+
+.free-lesson__wrapper {
+  position: relative;
+
+  img {
+    background-color: $color-paris-daisy;
+
+    @include vp-1439 {
+      min-height: 600px;
+      object-fit: fill;
+    }
+  }
+}
+
+.free-lesson__form {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $color-light-sky-blue;
+  border: 2px solid $color-default-black;
+  box-shadow: 4px 4px 0px 0px $color-default-black;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 400px;
+  margin: 0 auto;
+  padding: 28px 20px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include vp-1439 {
+    max-width: 694px;
+    min-height: 343px;
+  }
+
+  @include vp-767 {
+    background-color: $color-default-white;
+    min-height: unset;
+    justify-content: start;
+    width: 88%;
+    padding: 35px 20px;
+  }
+}
+
+.free-lesson__title {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 15px;
+
+  @include vp-767 {
+    margin: 0 0 20px;
+  }
+}
+
+.free-lesson__field {
+  input {
+    min-width: 325px;
+    width: 100%;
+    min-height: 54px;
+
+    border: 2px solid $color-default-black;
+    box-shadow: 4px 4px 0px 0px $color-default-black;
+    padding: 16px, 30px;
+    margin-bottom: 12px;
+
+    &::placeholder {
+      padding: 16px 30px;
+    }
+  }
+
+  @include vp-767 {
+    width: 100%;
+
+    input {
+      min-width: unset;
+    }
+  }
+}
+
+.free-lesson__form-button {
+  max-width: 259px;
+  min-height: 57px;
+  height: fit-content;
+  border: 2px solid $color-default-black;
+  box-shadow: 4px 4px 0px 0px $color-default-black;
+  background-color: $color-paris-daisy;
+  padding: 12px 28px;
+
+  font-size: 28px;
+  line-height: 39px;
+  color: $color-default-black;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    border: 2px solid $color-brilliat-rose;
+    box-shadow: 4px 4px 0px 0px $color-brilliat-rose;
+    color: $color-brilliat-rose;
+  }
+}
