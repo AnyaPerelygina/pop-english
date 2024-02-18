@@ -1,6 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {SimpleCursor} from './utils/simple-cursor';
-import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {addToggleMenu} from './modules/header/toggle';
 import {StickyHeader} from './modules/header/sticky-header';
@@ -28,7 +27,6 @@ window.addEventListener('DOMContentLoaded', () => {
     simpleCursor.init();
     const stickyHeader = new StickyHeader();
     stickyHeader.init();
-    initModals();
     const form = new Form();
     window.form = form;
     form.init();
