@@ -1,4 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
+import './utils/scroll-lock.js';
 import {SimpleCursor} from './utils/simple-cursor';
 import {Form} from './modules/form-validate/form';
 import {addToggleMenu} from './modules/header/toggle';

@@ -20,7 +20,7 @@ html {
   line-height: 24px;
   font-family: $ff-nyasha-sans;
   color: $color-default-black;
-
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // оптимизация выравнивания шрифта относительно центра строки
@@ -42,6 +42,7 @@ body {
   font-size: 16px;
   text-align: left;
   color: $color-default-black;
+  scroll-behavior: smooth;
 }
 
 footer {
