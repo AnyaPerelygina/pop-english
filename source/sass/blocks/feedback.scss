@@ -170,6 +170,7 @@
     max-height: 700px;
     background-color: transparent;
     margin: 0 auto;
+    object-fit: contain;
   }
 
   @include vp-767 {
