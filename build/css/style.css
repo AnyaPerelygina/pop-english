@@ -314,6 +314,18 @@ template {
   display: none;
 }
 
+.intro {
+  width: 100%;
+  padding: 20px;
+}
+.intro h1 {
+  line-height: normal;
+}
+.intro a {
+  color: #ee75ab;
+  cursor: pointer;
+}
+
 @font-face {
   font-style: normal;
   font-weight: 400;
