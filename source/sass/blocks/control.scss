@@ -1,6 +1,7 @@
 .control {
   position: relative;
   padding-left: 25px;
+  cursor: pointer;
 }
 
 .control__mark {
@@ -15,6 +16,34 @@
   border-radius: 50%;
 }
 
+.control__customLabel {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $color-default-black;
+
+  @include vp-767 {
+    font-size: 14px;
+  }
+}
+
+/* Состояние hover */
+
+.control__input[type="radio"]:hover + .control__mark {
+  border: 1px solid $color-brilliat-rose;
+  background: $color-default-white;
+}
+
+.control__input[type="radio"]:hover + .control__mark::before {
+  background-color: $color-brilliat-rose;
+}
+
+.control__input[type="radio"]:hover ~ .control__customLabel {
+  color: $color-brilliat-rose;
+}
+
+/* Состояние checked */
+
 .control__input[type="radio"]:checked + .control__mark::before {
   position: absolute;
   content: "";
@@ -26,12 +55,12 @@
   border-radius: 50%;
 }
 
-.control__customLabel {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
+.control__input[type="radio"]:checked:hover + .control__mark {
+  border: 1px solid $color-default-black;
+  background: $color-default-white;
+  cursor: not-allowed;
+}
 
-  @include vp-767 {
-    font-size: 14px;
-  }
+.control__input[type="radio"]:checked:hover ~ .control__customLabel {
+  color: $color-default-black; /* Сохраняем стандартный цвет текста */
 }
