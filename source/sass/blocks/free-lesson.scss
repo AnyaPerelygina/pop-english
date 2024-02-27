@@ -85,6 +85,29 @@
     &::placeholder {
       padding: 16px 30px;
     }
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      border: 2px solid $color-brilliat-rose;
+      box-shadow: 4px 4px 0px 0px $color-brilliat-rose;
+      outline: none;
+      padding: 0 32px;
+
+      &::placeholder {
+        padding: 16px 0;
+      }
+    }
+
+    &:active {
+      border: 2px solid $color-tickle-me-pink;
+      box-shadow: 4px 4px 0px 0px $color-tickle-me-pink;
+      padding: 0 32px;
+
+      &::placeholder {
+        padding: 16px 0;
+      }
+    }
   }
 
   @include vp-767 {

@@ -65,8 +65,14 @@
     margin: 0 0 0 5px;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:focus-visible {
+      border-color: $color-brilliat-rose;
       outline: none;
+    }
+
+    &:active {
+      border-color: $color-tickle-me-pink;
     }
   }
 
