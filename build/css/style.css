@@ -781,7 +781,9 @@ button,
 }
 
 .header__subwrapper.is-opened {
-  display: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   content: "";
   top: 100px;
@@ -3629,66 +3631,19 @@ button,
   border: 2px solid #000000;
   -webkit-box-shadow: 4px 4px 0px 0px #000000;
           box-shadow: 4px 4px 0px 0px #000000;
-  padding: 16px, 30px;
+  padding: 16px 30px;
   margin-bottom: 12px;
-}
-.free-lesson__field input::-webkit-input-placeholder {
-  padding: 16px 30px;
-}
-.free-lesson__field input::-moz-placeholder {
-  padding: 16px 30px;
-}
-.free-lesson__field input:-ms-input-placeholder {
-  padding: 16px 30px;
-}
-.free-lesson__field input::-ms-input-placeholder {
-  padding: 16px 30px;
-}
-.free-lesson__field input::placeholder {
-  padding: 16px 30px;
 }
 .free-lesson__field input:hover, .free-lesson__field input:focus, .free-lesson__field input:focus-visible {
   border: 2px solid #f668a2;
   -webkit-box-shadow: 4px 4px 0px 0px #f668a2;
           box-shadow: 4px 4px 0px 0px #f668a2;
   outline: none;
-  padding: 0 32px;
-}
-.free-lesson__field input:hover::-webkit-input-placeholder, .free-lesson__field input:focus::-webkit-input-placeholder, .free-lesson__field input:focus-visible::-webkit-input-placeholder {
-  padding: 16px 0;
-}
-.free-lesson__field input:hover::-moz-placeholder, .free-lesson__field input:focus::-moz-placeholder, .free-lesson__field input:focus-visible::-moz-placeholder {
-  padding: 16px 0;
-}
-.free-lesson__field input:hover:-ms-input-placeholder, .free-lesson__field input:focus:-ms-input-placeholder, .free-lesson__field input:focus-visible:-ms-input-placeholder {
-  padding: 16px 0;
-}
-.free-lesson__field input:hover::-ms-input-placeholder, .free-lesson__field input:focus::-ms-input-placeholder, .free-lesson__field input:focus-visible::-ms-input-placeholder {
-  padding: 16px 0;
-}
-.free-lesson__field input:hover::placeholder, .free-lesson__field input:focus::placeholder, .free-lesson__field input:focus-visible::placeholder {
-  padding: 16px 0;
 }
 .free-lesson__field input:active {
   border: 2px solid #ee75ab;
   -webkit-box-shadow: 4px 4px 0px 0px #ee75ab;
           box-shadow: 4px 4px 0px 0px #ee75ab;
-  padding: 0 32px;
-}
-.free-lesson__field input:active::-webkit-input-placeholder {
-  padding: 16px 0;
-}
-.free-lesson__field input:active::-moz-placeholder {
-  padding: 16px 0;
-}
-.free-lesson__field input:active:-ms-input-placeholder {
-  padding: 16px 0;
-}
-.free-lesson__field input:active::-ms-input-placeholder {
-  padding: 16px 0;
-}
-.free-lesson__field input:active::placeholder {
-  padding: 16px 0;
 }
 @media (max-width: 767px) {
   .free-lesson__field {

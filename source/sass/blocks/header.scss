@@ -148,7 +148,7 @@
 }
 
 .header__subwrapper.is-opened {
-  display: unset;
+  display: flex;
   position: absolute;
   content: "";
   top: 100px;
