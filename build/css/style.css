@@ -3537,7 +3537,7 @@ button,
 }
 @media (max-width: 1439px) {
   .free-lesson__wrapper img {
-    min-height: 600px;
+    min-height: 650px;
     -o-object-fit: fill;
        object-fit: fill;
   }
