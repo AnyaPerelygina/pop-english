@@ -1,5 +1,8 @@
 {
   "extends": "stylelint-config-htmlacademy",
+  "ignoreFiles": [
+    "source/sass/vendor/*.scss"
+  ],
 
   "rules": {
     "declaration-no-important": true,

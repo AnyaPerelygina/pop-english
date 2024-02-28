@@ -34,7 +34,7 @@
   transform: translate(-50%, -50%);
   background-color: $color-light-sky-blue;
   border: 2px solid $color-default-black;
-  box-shadow: 4px 4px 0px 0px $color-default-black;
+  box-shadow: 4px 4px 0 0 $color-default-black;
   width: 100%;
   max-width: 1000px;
   min-height: 400px;
@@ -78,7 +78,7 @@
     min-height: 54px;
 
     border: 2px solid $color-default-black;
-    box-shadow: 4px 4px 0px 0px $color-default-black;
+    box-shadow: 4px 4px 0 0 $color-default-black;
     padding: 16px 30px;
     margin-bottom: 12px;
 
@@ -86,13 +86,13 @@
     &:focus,
     &:focus-visible {
       border: 2px solid $color-brilliat-rose;
-      box-shadow: 4px 4px 0px 0px $color-brilliat-rose;
+      box-shadow: 4px 4px 0 0 $color-brilliat-rose;
       outline: none;
     }
 
     &:active {
       border: 2px solid $color-tickle-me-pink;
-      box-shadow: 4px 4px 0px 0px $color-tickle-me-pink;
+      box-shadow: 4px 4px 0 0 $color-tickle-me-pink;
     }
   }
 
@@ -110,7 +110,7 @@
   min-height: 57px;
   height: fit-content;
   border: 2px solid $color-default-black;
-  box-shadow: 4px 4px 0px 0px $color-default-black;
+  box-shadow: 4px 4px 0 0 $color-default-black;
   background-color: $color-paris-daisy;
   padding: 12px 28px;
 
@@ -125,7 +125,7 @@
   &:focus {
     transform: scale(1.05);
     border: 2px solid $color-brilliat-rose;
-    box-shadow: 4px 4px 0px 0px $color-brilliat-rose;
+    box-shadow: 4px 4px 0 0 $color-brilliat-rose;
     color: $color-brilliat-rose;
   }
 }

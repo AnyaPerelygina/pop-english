@@ -336,24 +336,19 @@
               <source type="image/webp" media="(max-width: 767px)" srcset="./img/background-form-mobile.webp">
               <img src="./img/background-form-mobile.png" width="480" height="605" alt="Фоновая картинка.">
             </picture>
-            <form class="free-lesson__form" action="https://echo.htmlacademy.ru/" method="post" novalidate>
+            <form class="free-lesson__form" action="https://echo.htmlacademy.ru/" data-form-validate method="post" novalidate>
               <h2 class="free-lesson__title">Записаться на бесплатный урок</h2>
-              <div class="free-lesson__field" data-validate-type="text" data-limitation="name"
-                data-message-base="Обязательное поле" data-message-extra="Некорректные данные"
-                data-required>
+              <div class="free-lesson__field" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
                 <label class="visually-hidden" aria-label="Ваше имя." for="user-name">Имя</label>
-                <input placeholder="Имя" id="user-name" type="text" name="user-name" autocomplete="off" required>
+                <input placeholder="Имя" id="user-name" type="text" name="user-name" aria-invalid="true" required>
               </div>
-              <div class="free-lesson__field" data-validate-type="email" data-required data-email-length="18">
+              <div class="free-lesson__field" data-validate-type="email" data-message-base="Поле обязательно к заполнению" data-required>
                 <label class="visually-hidden" aria-label="Ваша электронная почта." for="user-name">Email</label>
                 <input placeholder="Email" type="email" name="user-email" aria-invalid="true" required>
               </div>
-              <div class="free-lesson__field" data-validate-type="phone" data-on-input-validate
-                data-message-base="Обязательное поле" data-message-extra="Некорректные данные" data-required
-                data-phone-length="11">
+              <div class="free-lesson__field" data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required>
                 <label class="visually-hidden" aria-label="Ваш номер телефона." for="phone">Телефон</label>
-                <input id="phone" type="tel" name="user-phone" placeholder="Телефон" aria-invalid="true"
-                  autocomplete="off" required>
+                <input id="phone" type="tel" name="user-phone" placeholder="Телефон" aria-invalid="true" required>
               </div>
 
               <fieldset class="messengers">
@@ -431,10 +426,10 @@
           <div class="footer__subscription subscription">
             <p>Подпишись на&nbsp;рассылку&nbsp;-&nbsp;получишь скидку!</p>
             <div class="subscription__form">
-              <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" novalidate>
-                <div class="subscription__email" data-validate-type="email" data-required data-email-length="18">
+              <form action="https://echo.htmlacademy.ru/" method="post" novalidate>
+                <div class="subscription__email" data-validate-type="email" data-message-base="Поле обязательно к заполнению" data-required>
                   <label class="visually-hidden">Email</label>
-                  <input placeholder="Введите е-mail" type="email" name="email" aria-invalid="true" required>
+                  <input placeholder="Введите е-mail" type="email" name="user-email" required>
                 </div>
                 <button class="subscription__button" type="submit">Подписаться</button>
               </form>

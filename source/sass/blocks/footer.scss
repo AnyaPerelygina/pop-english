@@ -37,7 +37,7 @@
       "L S"
       "F F"
       "C C";
-      grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   @include vp-479 {
@@ -306,7 +306,6 @@
   }
 
   @include vp-767 {
-    margin: 33px 0 0 6px;
     margin: 34px 5px 0 0;
     justify-self: end;
     width: 217px;

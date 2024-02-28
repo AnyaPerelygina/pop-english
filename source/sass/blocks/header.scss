@@ -78,7 +78,7 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0 0 0 40px;
-  background-color: white;
+  background-color: $color-default-white;
 
   @include vp-1439 {
     margin: 0 0 0 35px;
@@ -105,7 +105,7 @@
   min-height: 57px;
   height: fit-content;
   border: 2px solid $color-default-black;
-  box-shadow: 4px 4px 0px 0px $color-default-black;
+  box-shadow: 4px 4px 0 0 $color-default-black;
   background-color: $color-paris-daisy;
   padding: 16px 32px;
 
@@ -134,7 +134,7 @@
   &:focus {
     transform: scale(1.05);
     border: 2px solid $color-brilliat-rose;
-    box-shadow: 4px 4px 0px 0px $color-brilliat-rose;
+    box-shadow: 4px 4px 0 0 $color-brilliat-rose;
     color: $color-brilliat-rose;
   }
 }
