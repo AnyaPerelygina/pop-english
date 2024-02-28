@@ -21,18 +21,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 10px 40px;
   margin: 0 auto;
 
   position: relative;
   background-color: $color-default-white;
 
   @include vp-1439 {
-    padding: 0 80px;
+    padding: 10px 80px;
   }
 
   @include vp-999 {
-    padding: 0 25px;
+    padding: 10px 25px;
   }
 
   @include vp-767 {
@@ -102,7 +102,7 @@
 
 .header__button {
   max-width: 177px;
-  min-height: 57px;
+  // min-height: 57px;
   height: fit-content;
   border: 2px solid $color-default-black;
   box-shadow: 4px 4px 0 0 $color-default-black;
@@ -116,7 +116,7 @@
 
   @include vp-767 {
     max-width: 239px;
-    min-height: 67px;
+    // min-height: 67px;
 
     font-size: 28px;
 
@@ -126,7 +126,7 @@
 
   @include vp-479 {
     max-width: 193px;
-    min-height: 56px;
+    // min-height: 56px;
     font-size: 20px;
   }
 
@@ -149,6 +149,8 @@
 
 .header__subwrapper.is-opened {
   display: flex;
+  overflow-y: auto;
+  height: 500px;
   position: absolute;
   content: "";
   top: 100px;
@@ -159,7 +161,7 @@
   background-position: top;
   background-repeat: no-repeat;
 
-  padding: 63px 45px 79px 34px;
+  padding: 63px 45px 18px 34px;
 
   border-top: 2px solid $color-default-black;
   border-right: 4px solid $color-default-black;
