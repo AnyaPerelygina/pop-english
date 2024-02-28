@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
     outline: none;
     cursor: pointer;
     border: none;
@@ -23,8 +24,8 @@
 
 .toggle__opened,
 .toggle__closed {
-  @include vp-479 {
-    width: 65%;
+  @include vp-767 {
+    width: 70%;
   }
 }
 

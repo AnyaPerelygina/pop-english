@@ -6,10 +6,6 @@
   top: 0;
   transition: 1s;
   z-index: 999999;
-
-  @include vp-767 {
-    border-bottom: 2px solid $color-default-black;
-  }
 }
 
 .header__wrapper {
@@ -21,10 +17,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
   margin: 0 auto;
-
-  position: relative;
   background-color: $color-default-white;
 
   @include vp-1439 {
@@ -36,13 +29,29 @@
   }
 
   @include vp-767 {
-    padding: 0 20px;
+    padding: 0;
     min-height: 98px;
     justify-content: space-between;
     z-index: 1;
-    width: 100%;
+  }
+}
+
+.header__sticky-wrap {
+  padding: 0;
+  min-width: unset;
+  max-width: 136px;
+  justify-content: space-between;
+  width: 100%;
+
+  @include vp-767 {
     min-width: 320px;
     max-width: 100%;
+    min-height: 98px;
+    display: flex;
+    background-color: $color-default-white;
+    z-index: 9999999;
+    padding: 10px 20px;
+    border-bottom: 2px solid $color-default-black;
   }
 }
 
@@ -50,19 +59,11 @@
   max-width: 136px;
   max-height: 100px;
   cursor: pointer;
-
-  margin: -40px 0 0 -41px;
-
-  @include vp-1439 {
-    margin: -38px 0 0 -51px;
-  }
-
-  @include vp-999 {
-    margin: -37px 0 0 4px;
-  }
+  margin: 0;
 
   @include vp-767 {
-    margin: -38px 0 0 -20px;
+    margin: -34px 0 0 -20px;
+    z-index: 9999999;
   }
 
   &:hover,
@@ -73,7 +74,6 @@
 
 .header__subwrapper {
   width: 100%;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -102,7 +102,6 @@
 
 .header__button {
   max-width: 177px;
-  // min-height: 57px;
   height: fit-content;
   border: 2px solid $color-default-black;
   box-shadow: 4px 4px 0 0 $color-default-black;
@@ -116,17 +115,16 @@
 
   @include vp-767 {
     max-width: 239px;
-    // min-height: 67px;
 
     font-size: 28px;
 
     padding: 14px 42px;
     margin-bottom: 35px;
+    z-index: 9999999;
   }
 
   @include vp-479 {
     max-width: 193px;
-    // min-height: 56px;
     font-size: 20px;
   }
 
@@ -150,10 +148,10 @@
 .header__subwrapper.is-opened {
   display: flex;
   overflow-y: auto;
-  height: 500px;
-  position: absolute;
-  content: "";
-  top: 100px;
+  height: 600px;
+  max-height: 100%;
+  position: fixed;
+  top: 0;
   right: 0;
   z-index: 1;
   background-image: url("./../img/dots/background-dot-black.webp");
@@ -161,7 +159,7 @@
   background-position: top;
   background-repeat: no-repeat;
 
-  padding: 63px 45px 18px 34px;
+  padding: 163px 45px 18px 34px;
 
   border-top: 2px solid $color-default-black;
   border-right: 4px solid $color-default-black;
