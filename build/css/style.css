@@ -1539,6 +1539,7 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
 }
 @media (max-width: 767px) {
   .subscription__form form {
@@ -1572,6 +1573,39 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+.subscription__email__error {
+  position: absolute;
+  right: 0;
+  bottom: 35px;
+  color: #f60606;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .subscription__email__error {
+    bottom: 20px;
+  }
+}
+.subscription__email.is-invalid input,
+.subscription__email.is-invalid textarea {
+  border: 2px solid #f60606;
+}
+.subscription__email.is-invalid input:focus, .subscription__email.is-invalid input:hover,
+.subscription__email.is-invalid textarea:focus,
+.subscription__email.is-invalid textarea:hover {
+  border: 2px solid rgba(246, 6, 6, 0.5);
+}
+.subscription__email .input-message {
+  position: absolute;
+  left: 10px;
+  bottom: -20px;
+}
+.subscription__email .input-message.is-invalid {
+  color: #f60606;
+  font-size: 10px;
+  line-height: normal;
 }
 .subscription__email input {
   border: 1px solid #2d465d;
@@ -2997,66 +3031,6 @@ button,
 .custom-textarea label textarea:focus {
   border: 2px solid rgba(0, 0, 0, 0.8);
 }
-@media screen and (max-width: 767px) {
-  .custom-input__label,
-.custom-textarea__label {
-    margin: 0 0 18px 0;
-  }
-}
-.custom-input__error,
-.custom-textarea__error {
-  position: absolute;
-  right: 0;
-  bottom: 35px;
-  color: #ff1553;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-@media screen and (max-width: 767px) {
-  .custom-input__error,
-.custom-textarea__error {
-    bottom: 20px;
-  }
-}
-.custom-input.is-invalid input,
-.custom-input.is-invalid textarea,
-.custom-textarea.is-invalid input,
-.custom-textarea.is-invalid textarea {
-  border: 2px solid #ff1553;
-}
-.custom-input.is-invalid input:focus, .custom-input.is-invalid input:hover,
-.custom-input.is-invalid textarea:focus,
-.custom-input.is-invalid textarea:hover,
-.custom-textarea.is-invalid input:focus,
-.custom-textarea.is-invalid input:hover,
-.custom-textarea.is-invalid textarea:focus,
-.custom-textarea.is-invalid textarea:hover {
-  border: 2px solid rgba(255, 21, 83, 0.5);
-}
-.custom-input.is-valid input,
-.custom-textarea.is-valid input {
-  border: 2px solid #22b259;
-}
-.custom-input.is-valid input:focus, .custom-input.is-valid input:hover,
-.custom-textarea.is-valid input:focus,
-.custom-textarea.is-valid input:hover {
-  border: 2px solid rgba(34, 178, 89, 0.5);
-}
-.custom-input .input-message,
-.custom-textarea .input-message {
-  position: absolute;
-  right: 0;
-  bottom: -5px;
-}
-.custom-input .input-message.is-invalid,
-.custom-textarea .input-message.is-invalid {
-  color: #ff0000;
-}
-.custom-input .input-message.is-valid,
-.custom-textarea .input-message.is-valid {
-  color: #15ab07;
-}
 
 .custom-toggle {
   position: relative;
@@ -3627,6 +3601,44 @@ button,
   }
 }
 
+.free-lesson__field {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+.free-lesson__field__error {
+  position: absolute;
+  right: 0;
+  bottom: 35px;
+  color: #f60606;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .free-lesson__field__error {
+    bottom: 20px;
+  }
+}
+.free-lesson__field.is-invalid input,
+.free-lesson__field.is-invalid textarea {
+  border: 2px solid #f60606;
+}
+.free-lesson__field.is-invalid input:focus, .free-lesson__field.is-invalid input:hover,
+.free-lesson__field.is-invalid textarea:focus,
+.free-lesson__field.is-invalid textarea:hover {
+  border: 2px solid rgba(246, 6, 6, 0.5);
+}
+.free-lesson__field .input-message.is-invalid {
+  color: #f60606;
+  font-size: 10px;
+  line-height: 30px;
+}
+@media (max-width: 767px) {
+  .free-lesson__field .input-message.is-invalid {
+    font-size: 8px;
+  }
+}
 .free-lesson__field input {
   min-width: 325px;
   width: 100%;

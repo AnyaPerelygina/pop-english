@@ -72,6 +72,48 @@
 }
 
 .free-lesson__field {
+  width: min-content;
+
+  &__error {
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+
+    color: $color-default-error;
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+
+    @media screen and (max-width: 767px) {
+      bottom: 20px;
+    }
+  }
+
+  &.is-invalid {
+    input,
+    textarea {
+      border: 2px solid $color-default-error;
+
+      &:focus,
+      &:hover {
+        border: 2px solid rgba($color-default-error, 0.5);
+      }
+    }
+  }
+
+  .input-message {
+    &.is-invalid {
+      color: $color-default-error;
+      font-size: 10px;
+      line-height: 30px;
+
+      @include vp-767 {
+        font-size: 8px;
+      }
+    }
+  }
+
   input {
     min-width: 325px;
     width: 100%;

@@ -1,6 +1,7 @@
 const addToggleMenu = () => {
   const OPENED_CLASS = 'is-opened';
   const LINK_CLASS = '.nav__link';
+  const BUTTON_CLASS = '.header__button';
   const root = document.querySelector('.header');
   const toggle = root.querySelector('.toggle');
   const nav = root.querySelector('.header__subwrapper');
@@ -10,7 +11,7 @@ const addToggleMenu = () => {
   };
 
   const onLinkClick = (evt) => {
-    return evt.target.matches(LINK_CLASS) ? closeMenu() : null;
+    return evt.target.matches(LINK_CLASS) || evt.target.matches(BUTTON_CLASS) ? closeMenu() : null;
   };
 
   const isMenu = (evt) => {
