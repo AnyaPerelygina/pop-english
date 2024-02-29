@@ -25,7 +25,7 @@ const addToggleMenu = () => {
     document.addEventListener('keydown', onDocumentKeydown);
     nav.addEventListener('click', onLinkClick);
     document.addEventListener('click', isMenu);
-    window.scrollLock.disableScrolling();
+    // window.scrollLock.disableScrolling();
     document.addEventListener('click', onDocumentOutside);
 
   };
@@ -37,17 +37,19 @@ const addToggleMenu = () => {
     document.removeEventListener('keydown', onDocumentKeydown);
     nav.removeEventListener('click', onLinkClick);
     document.removeEventListener('click', isMenu);
-    window.scrollLock.enableScrolling();
+    // window.scrollLock.enableScrolling();
     document.removeEventListener('click', onDocumentOutside);
   };
 
   const onDocumentOutside = (evt) => {
-    if (evt.target === root || root.contains(evt.target)) {
-      return;
-    } else {
+    if (
+      (evt.target !== toggle && !toggle.contains(evt.target)) &&
+      (evt.target !== nav && !nav.contains(evt.target))
+    ) {
       closeMenu();
     }
   };
+
   toggle.addEventListener('click', () => {
     return !toggle.classList.contains(OPENED_CLASS) ? openMenu() : closeMenu();
   });
