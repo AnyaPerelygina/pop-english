@@ -25,7 +25,7 @@ const addToggleMenu = () => {
     document.addEventListener('keydown', onDocumentKeydown);
     nav.addEventListener('click', onLinkClick);
     document.addEventListener('click', isMenu);
-    // window.scrollLock.disableScrolling();
+    window.scrollLock.disableScrolling();
     document.addEventListener('click', onDocumentOutside);
 
   };
@@ -37,7 +37,7 @@ const addToggleMenu = () => {
     document.removeEventListener('keydown', onDocumentKeydown);
     nav.removeEventListener('click', onLinkClick);
     document.removeEventListener('click', isMenu);
-    // window.scrollLock.enableScrolling();
+    window.scrollLock.enableScrolling();
     document.removeEventListener('click', onDocumentOutside);
   };
 
