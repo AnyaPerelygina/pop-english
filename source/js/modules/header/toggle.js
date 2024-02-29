@@ -27,7 +27,6 @@ const addToggleMenu = () => {
     document.addEventListener('click', isMenu);
     window.scrollLock.disableScrolling();
     document.addEventListener('click', onDocumentOutside);
-
   };
 
   const closeMenu = () => {

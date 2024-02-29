@@ -1,6 +1,6 @@
+import './utils/scroll-lock';
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import './utils/scroll-lock';
 import {SimpleCursor} from './utils/simple-cursor';
 import {addToggleMenu} from './modules/header/toggle';
 import {StickyHeader} from './modules/header/sticky-header';
