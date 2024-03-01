@@ -5,8 +5,6 @@ export class StickyHeader {
     this._hidePoint = this._stickyHeader ? +this._stickyHeader.dataset.hidePoint : 0;
     this._hidePoint = this._hidePoint ? this._hidePoint : 0;
 
-    this._activeTheme = null;
-
     this._scrollY = null;
     this._prevScrollY = null;
 
@@ -18,11 +16,6 @@ export class StickyHeader {
 
   init() {
     if (!this._stickyHeader) {
-      return;
-    }
-    this._checkTheme();
-    if (window.ls) {
-      window.ls.on('scroll', this._onLocomotiveScroll);
       return;
     }
     window.addEventListener('scroll', this._onWindowScroll);
@@ -51,7 +44,6 @@ export class StickyHeader {
 
   _onWindowScroll() {
     this._scrollY = document.documentElement.scrollTop;
-    this._checkTheme();
 
     if (this._checkScrollDirection() === 'down' && this._scrollY > this._hidePoint) {
       this._hideHeader();
