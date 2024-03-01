@@ -5,7 +5,6 @@ export class StickyHeader {
     this._hidePoint = this._stickyHeader ? +this._stickyHeader.dataset.hidePoint : 0;
     this._hidePoint = this._hidePoint ? this._hidePoint : 0;
 
-    this._themeItems = document.querySelectorAll('[data-header-theme-class]');
     this._activeTheme = null;
 
     this._scrollY = null;
@@ -15,7 +14,6 @@ export class StickyHeader {
     this._isDisableScrolling = false;
 
     this._onWindowScroll = this._onWindowScroll.bind(this);
-    this._onLocomotiveScroll = this._onLocomotiveScroll.bind(this);
   }
 
   init() {
@@ -51,18 +49,6 @@ export class StickyHeader {
     return 'up';
   }
 
-  _onLocomotiveScroll(evt) {
-    this._checkTheme();
-
-    if (evt.direction === 'down' && evt.delta.y > this._hidePoint) {
-      this._hideHeader();
-    }
-
-    if (evt.direction === 'up' || evt.delta.y <= this._hidePoint) {
-      this._showHeader();
-    }
-  }
-
   _onWindowScroll() {
     this._scrollY = document.documentElement.scrollTop;
     this._checkTheme();
@@ -76,18 +62,5 @@ export class StickyHeader {
     }
 
     this._prevScrollY = this._scrollY;
-  }
-
-  _checkTheme() {
-    this._themeItems.forEach((item) => {
-      if (item.getBoundingClientRect().top <= 0 && item.getBoundingClientRect().height + item.getBoundingClientRect().top > 0) {
-        if (this._activeTheme === item.dataset.headerThemeClass) {
-          return;
-        }
-        this._stickyHeader.classList.remove(this._activeTheme);
-        this._activeTheme = item.dataset.headerThemeClass;
-        this._stickyHeader.classList.add(this._activeTheme);
-      }
-    });
   }
 }

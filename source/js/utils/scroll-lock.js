@@ -30,6 +30,7 @@ export class ScrollLock {
     }
     document.body.style.top = `-${this._scrollTop}px`;
     document.body.classList.add(this._lockClass);
+    document.documentElement.style.scrollBehavior = 'unset';
   }
 
   enableScrolling() {
@@ -42,6 +43,7 @@ export class ScrollLock {
     });
     document.body.removeAttribute('data-scroll');
     this._scrollTop = null;
+    document.documentElement.style.scrollBehavior = '';
   }
 }
 
